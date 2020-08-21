@@ -27,5 +27,25 @@
 5. Now in the search bar type the application name that you have just created and click ok.
 ![image](https://user-images.githubusercontent.com/60179170/90882177-2bbd9d80-e3c9-11ea-92b7-02b45cec2705.png)
 ### Add scope to the API 
-
+1. Click on the `Scope` from the menu bar and select `Add scope`.
+![image](https://user-images.githubusercontent.com/60179170/90882652-e9489080-e3c9-11ea-8db1-97f89f509131.png)
+2. Give the scope a name and add the resources where you want to add the scope.
+![image](https://user-images.githubusercontent.com/60179170/90882793-2f9def80-e3ca-11ea-942a-8e86f6605b26.png)
+### Adding Policy
+1. Click on `Policies` tab and select your scope.</br>
+![image](https://user-images.githubusercontent.com/60179170/90882892-5e1bca80-e3ca-11ea-900e-0e7072843a4d.png)
+2. Now from the `Policy Catalog` select `Identify & Access` and add `Identify & Authorize Applicaton` and check `HTTPHeaders` and keep the drop down option as `Registered applications`.
+![image](https://user-images.githubusercontent.com/60179170/90883049-b18e1880-e3ca-11ea-8bbd-914a09fac37d.png)
+3. Now click on `Save`.
+### Test using Postman
+1. Coppy your gateway end point and paste in Postman.
+![image](https://user-images.githubusercontent.com/60179170/90883606-ca4afe00-e3cb-11ea-8ec7-73605653e990.png)
+2. Add all the HTTP header you configure in your API.
+![image](https://user-images.githubusercontent.com/60179170/90883755-1007c680-e3cc-11ea-953f-5f0f415e759e.png)
+3. <b>Now add the extra header which you have configure in the application. As you have configure securing APIs using HTTP Headers.</b>
+![image](https://user-images.githubusercontent.com/60179170/90884536-9244ba80-e3cd-11ea-80f7-d5fd34041812.png)
+4. Now send the request and you will get 200 OK response.
+![image](https://user-images.githubusercontent.com/60179170/90884674-cddf8480-e3cd-11ea-9f04-b260f961d267.png)
+5. If you remove the extra header then you will get error.</br>
+![image](https://user-images.githubusercontent.com/60179170/90884838-1dbe4b80-e3ce-11ea-9cc1-4e7d10cec21e.png)
 
